@@ -22,7 +22,7 @@ def switch_page(page):
 
 
 # ===============================
-# ✅ CENTERED LOGIN PAGE (NO HTML)
+# ✅ CENTERED LOGIN PAGE
 # ===============================
 def login_page():
     left, center, right = st.columns([2, 3, 2])
@@ -613,8 +613,7 @@ except:
 
 powerbi_col1, powerbi_col2 = st.columns(2)
 
-# ---------------- OPEN POWER BI ONLINE ----------------
-with powerbi_col2:
+with powerbi_col1:
     st.markdown("### 🌐 Open Power BI Online")
 
     st.link_button(
@@ -623,7 +622,6 @@ with powerbi_col2:
     )
 
     st.caption("Login with your Microsoft account to upload & publish the dashboard.")
-
 
 #--------------about us-----------------
 # ===================== ABOUT US PAGE =====================
